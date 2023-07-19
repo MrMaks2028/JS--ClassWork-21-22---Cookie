@@ -1,0 +1,57 @@
+/* =====CSS-VARIABLES===== */
+:root {
+    --fontcolor: #000;
+    --bgcolor: #FFF;
+}
+
+
+/* =====GLOBAL===== */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--fontcolor);
+
+    box-sizing: border-box;
+}
+
+
+/* =====START-WINDOW===== */
+#start-window {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--bgcolor);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-window h2 { font-size: 2.5em; }
+#start-window p { 
+    margin-top: 16px;
+    font-size: 1.7em; 
+}
+
+#register {
+    margin-top: 16px;
+    padding: 10px 20px;
+    border: 3px solid var(--fontcolor);
+
+    background-color: var(--bgcolor);
+
+    font-size: 2em;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+#register:hover { background-color: #000; color: #FFF;}
